@@ -1,0 +1,19 @@
+
+
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+img {text-align: center;}
+p{color:palevioletred;}
+#nice {
+    color:coral;
+}
+#nice h1 {
+    background-color: lightblue;
+}
+#good {
+    color:darkgreen
+}
+.new {
+    background-color: hotpink;
+}
