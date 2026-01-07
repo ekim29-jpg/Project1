@@ -1,48 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
  <style>
 h1 {text-align: center;}
-p {text-align: center;}
+p {text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+  z-index: 0;
+  border: 2px solid rgb(133, 65, 52);
+  left: 360px;
+  }
+p2 {text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+ position: relative;
+  z-index: 1;
+  border: 2px solid rgb(133, 65, 52);
+  margin: 100px;
+  left: 330px;
+  top: 100px;}
+
 div {text-align: center;}
 img {text-align: center;}
-p{color:palevioletred}
+
 #nice {
-   
    
     color:coral;
     font-size: 50px;
     background-color:lightskyblue ;
 }
-#good {
+.good {
     color:darkgreen;
     font-size: 100px;
     background-color: lemonchiffon;
+     display: inline-block;
+  margin: 0;
+  padding: 10px 20px;
 
 }
+.right{ text-align: left;
+position:relative;
+right: -400px;}
 .new {
+    text-align: center;
+    display: inline-block;
+    border: 1px solid rgb(60, 42, 27);
     background-color: hotpink;
+    height: 40px;
+    margin-top: 200px;}
+
+.orange-circle {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;      
+  height: 200px;
+  border: 6px solid rgb(222, 79, 7);
+  border-radius: 50%; 
+
+  color: rgb(255, 209, 209);  
+  font-size: 50px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+  background-color: rgb(156, 245, 214); 
+  text-align: center;
+  padding: 10px;
+  margin-top: 100px;
+  margin-left: 200px;      
 }
+.orange-circle img {
+  width: 50px;         
+  height: 50px;
+  object-fit: cover;    
+  margin-top: 5px;
+  margin-left: 0px;
+}
+
+.rice-circle {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+
+  
+
+  width: 300px;     
+  height: 300px;
+  border: 7px solid rgb(199, 217, 190);
+  border-radius: 50%;  
+
+  color: rgb(250, 255, 216);  
+  font-size: 70px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+  background-color: rgb(255, 152, 216); 
+  text-align: center;
+  padding: 10px;
+  margin-top: 630px;  
+  margin-left: 500px;     
+}
+.rice-circle img {
+  width: 70px;        
+  height: 70px;
+  object-fit: cover;    
+  margin-top: 50px;  
+  margin-left: 0px;  
+}
+
+
+.fish-circle {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+
+  
+
+  width: 130px;     
+  height: 130px;
+  border: 5px solid rgb(73, 96, 79);
+  border-radius: 50%;  
+
+  color: rgb(181, 243, 255);  
+  font-size: 30px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, serif;  
+  background-color: rgb(217, 205, 232); 
+  text-align: center;
+  padding: 10px;
+  margin-top: -800px;  
+  margin-left: 1000px;     
+}
+.fish-circle img {
+  width: 50px;        
+  height: 50px;
+  object-fit: cover;    
+  margin-top: 10px;  
+  margin-left: 0px;
+}
+
+.more{ 
+    text-align: center;
+    position:absolute;
+    margin-top: 800px;}
+
 </style>
     <title>my passion website</title>
 </head>
 <body style="background-image:url(https://tamagotchi-official.com/tamagotchi/jp/character/2023/06/03/Grs0icuCW5ffxTAh/%E3%81%8F%E3%81%A1%E3%81%B1%E3%81%A3%E3%81%A1_%E6%9B%B8%E3%81%8D%E5%87%BA%E3%81%97%E6%AD%A3%E6%96%B9%E5%BD%A2.png)">
     <h1 id="nice"> Hello</h1>
 
-<div> <h3>My name is...</h3>
-<p id="good"> Kuchipatchi</p></div>
+<div> <h3 class="right">My name is...</h3>
+<p class="good"> Kuchi</p>
+<p2 class="good">Patchi</p2></div>
+
+
 
 <div><h2 class="new"> What I ate today</h2>
       <ul>
-        <li>orange<img src="https://www.quanta.org/thumbs/thumb-orange-640x480-orange.jpg" alt="orange" width="50"></li>
-        <li>rice<img src="https://healthynibblesandbits.com/wp-content/uploads/2018/10/Jasmine-Rice-FF.jpg" alt="rice" width="50"></li>
-        <li>fish<img src="https://png.pngtree.com/png-clipart/20241119/original/pngtree-tilapia-fish-4k-transparent-background-png-image_17267081.png" alt="fish" width="50"> </li>
+        <li class="orange-circle">orange<img class="orange-circle img"
+            src="https://www.quanta.org/thumbs/thumb-orange-640x480-orange.jpg" 
+            alt="orange" 
+            width="50"></li>
+        <li class="rice-circle">rice<img class="rice-circle img"
+            src="https://healthynibblesandbits.com/wp-content/uploads/2018/10/Jasmine-Rice-FF.jpg" 
+            alt="rice" 
+            width="50"></li>
+        <li class="fish-circle">fish<img class="fish-circle img"
+            src="https://png.pngtree.com/png-clipart/20241119/original/pngtree-tilapia-fish-4k-transparent-background-png-image_17267081.png" 
+            alt="fish" 
+            width="50"> </li>
     </ul>
 
 </div>
 <div> 
-    <a  href="https://tamagotchi-official.com/us/series/uni/character/2/">More about me</a>
+    <a class="more" href="https://tamagotchi-official.com/us/series/uni/character/2/">More about me</a>
 </div>
 </body>
 </html>
